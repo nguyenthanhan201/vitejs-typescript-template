@@ -8,8 +8,10 @@
     "build": "tsc && vite build",
     "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
     "preview": "vite preview",
+    "preview-host": "vite preview --host",
     "prepare": "husky install",
-    "playwright": "npx playwright test --headed"
+    "playwright": "npx playwright test --headed",
+    "prod": "npm run build && npm run preview-host"
   },
   "dependencies": {
     "@playwright/test": "^1.35.1",

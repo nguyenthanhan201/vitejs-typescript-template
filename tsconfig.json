@@ -20,7 +20,10 @@
       "@/*": ["src/*"]
     }
   },
-  // "files": ["custom-types.d.ts"],
+  "files": ["custom-types.d.ts"],
   "include": ["src", "custom-types.d.ts"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "references": [{ "path": "./tsconfig.node.json" }],
+  "watchOptions": {
+    "watchFile": "fixedPollingInterval"
+  }
 }

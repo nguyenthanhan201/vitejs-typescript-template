@@ -17,7 +17,7 @@ v16.15.0
 
   ```sh
   $ npm install -g degit # install degit if you don't have it
-  $ degit nguyenthanhan201/vitejs-typescript-template <project-nam>
+  $ degit nguyenthanhan201/vitejs-typescript-template <project-name>
   ```
 
   [Check out the full documentation!](#documents)
@@ -67,16 +67,10 @@ v16.15.0
 
 ## Table of scripts
 
-| Script                                        | Description                                                                                                                                   | Syntax                           |
-| --------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------- |
-| [Generate images](template/scripts/genimg.js) | Get all images from [src/assets/images](template/src/assets/images/) and require images in [src/themes/images](template/src/themes/images.js) | `yarn generateimages`            |
-| [Run App](template/scripts/run-app.sh)        | Run app in Android or iOS with selected variants                                                                                              | `yarn android`<br /> `yarn ios ` |
-
-## Test multiple browsers with Playwright 
-
-```
-npm run playwright
-```
+| Script                                                      | Description                        | Syntax            |
+| ----------------------------------------------------------- | ---------------------------------- | ----------------- |
+| [Run App](template/scripts/genimg.js)                       | Run project with develop eviroment | `yarn dev`        |
+| [Run App with Multiple Brosew](template/scripts/run-app.sh) | Run app with orthers browser       | `yarn playwright` |
 
 ## Contributors ✨
 

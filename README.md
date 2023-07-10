@@ -1,5 +1,14 @@
 # vitejs-typescript-template
 
+## Todos
+
+- [Jenkins và Github Action](https://www.youtube.com/watch?v=Gpl_usE_BWM&t=309s)
+- [add more scripts]()
+- [add more documents]()
+- [add more base components]()
+- [add more base hooks]()
+- [add more base utils]()
+
 ## Requirements
 
 NodeJS (version 16 or later) and NPM is required.

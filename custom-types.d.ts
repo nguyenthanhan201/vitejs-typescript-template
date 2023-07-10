@@ -5,6 +5,12 @@ interface ReactProps {
   style?: React.CSSProperties;
 }
 
+interface SelectOption {
+  label: string;
+  value: string;
+  disabled?: boolean;
+}
+
 // export enum ActionsEnum {
 //   VIEW = "VIEW",
 //   EDIT = "EDIT",

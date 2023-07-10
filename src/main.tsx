@@ -1,7 +1,8 @@
 import ReactDOM from "react-dom/client";
+import Router from "./routers/Router";
 
 function App() {
-  return <>vitejs template typescript</>;
+  return <Router />;
 }
 
 ReactDOM.createRoot(document.getElementById("root")!).render(

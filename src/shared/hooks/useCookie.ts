@@ -1,6 +1,11 @@
 import Cookies, { CookieAttributes } from "js-cookie";
 
-export const getCookie = (name: string) => {
+export enum CookiesKeys {
+  "eLynet_user_info" = "eLynet_user_info",
+  "eLynet_seller_info" = "eLynet_seller_info",
+}
+
+export const getCookie = (name: CookiesKeys) => {
   return JSON.parse(Cookies.get(name) || "{}");
 };
 export const setCookie = <T>(name: string, value: T, options?: CookieAttributes) => {
@@ -29,7 +34,7 @@ export function getCookieExpirationTime(cookieName: string) {
   return null; // Cookie not found or expiration time not set
 }
 
-function useCookie(key: string) {
+function useCookie(key: CookiesKeys) {
   return {
     get: () => getCookie(key),
     set: (value: string, options?: CookieAttributes) => setCookie(key, value, options),

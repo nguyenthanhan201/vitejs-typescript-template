@@ -9,10 +9,11 @@
     "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
     "preview": "vite preview",
     "prepare": "husky install",
-    "playwright": "npx playwright install && npx playwright test --headed"
+    "playwright": "npx playwright test --headed"
   },
   "dependencies": {
     "@playwright/test": "^1.35.1",
+    "dotenv": "^16.3.1",
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-jsx-a11y": "^6.7.1",
     "eslint-plugin-prettier": "^5.0.0-alpha.2",

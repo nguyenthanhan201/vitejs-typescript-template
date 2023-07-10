@@ -1,7 +1,6 @@
-import "./App.css";
-
 function App() {
-  return <>an nguyen</>;
+  console.log("process.env.URl_TEST_BROWSER", process.env.URl_TEST_BROWSER);
+  return <>{String(process.env.URl_TEST_BROWSER)}</>;
 }
 
 export default App;

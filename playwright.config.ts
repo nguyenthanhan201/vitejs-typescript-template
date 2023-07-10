@@ -1,5 +1,12 @@
 import { defineConfig, devices } from "@playwright/test";
-import { URl_TEST_BROWSER } from "./src/config";
+import * as dotenv from "dotenv";
+
+// Read from default ".env" file.
+dotenv.config();
+
+// Alternatively, read from "../my.env" file.
+// import path from "path";
+// dotenv.config({ path: path.resolve(__dirname, '..', 'my.env') });
 
 export default defineConfig({
   // Look for test files in the "tests" directory, relative to this configuration file.
@@ -22,7 +29,7 @@ export default defineConfig({
 
   use: {
     // Base URL to use in actions like `await page.goto('/')`.
-    baseURL: URl_TEST_BROWSER,
+    baseURL: process.env.URl_TEST_BROWSER,
 
     // Collect trace when retrying the failed test.
     trace: "on-first-retry",
@@ -45,7 +52,7 @@ export default defineConfig({
   // Run your local dev server before starting the tests.
   webServer: {
     command: "npm run dev",
-    url: URl_TEST_BROWSER,
+    url: process.env.URl_TEST_BROWSER,
     reuseExistingServer: !process.env.CI,
   },
 });

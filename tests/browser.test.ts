@@ -1,9 +1,8 @@
 import { test } from "@playwright/test";
-import { URl_TEST_BROWSER } from "./../src/config/index";
 
 test("test browser", async ({ page }) => {
   // this url have to run dev server before
-  await page.goto(URl_TEST_BROWSER);
+  await page.goto(process.env.URl_TEST_BROWSER, { waitUntil: "networkidle" });
 
   // keep browser open
   await page.pause();

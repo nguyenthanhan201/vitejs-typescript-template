@@ -1,1 +1,0 @@
-# vitejs-typescript-template

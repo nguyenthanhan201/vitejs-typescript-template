@@ -2,6 +2,7 @@ import ReactDOM from "react-dom/client";
 import Router from "./routers/Router";
 
 function App() {
+   const a = 1;
   return <Router />;
 }
 

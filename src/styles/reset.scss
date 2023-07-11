@@ -1,0 +1,103 @@
+:root {
+  --color-button-primary: #f27449;
+  --color-button-primary-hover: #f5997a;
+  --color-button-primary-press: #ef511b;
+  --color-surface-primary: #f27449;
+  --color-line-border-primary: #f27449;
+  --color-surface-primary4: #fff9f8;
+  --color-surface-primary10: #fef1ed;
+  --color-palette-primary-100: #f27449;
+  --color-palette-primary-200: #f27449;
+  --color-palette-primary-300: #f27449;
+  --color-palette-primary-400: #f27449;
+  --color-palette-primary-500: #f27449;
+  --color-palette-primary-600: #f27449;
+  --color-palette-primary-700: #f27449;
+  --color-palette-primary-800: #f27449;
+  --color-palette-primary-900: #f27449;
+  --color-palette-primary-1000: #f27449;
+  --color-icon-primary: #f27449;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  border-width: 0;
+  border-style: solid;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+*:focus {
+  outline: none;
+}
+
+// textarea:focus {
+//   border-color: #F27449 !important;
+// }
+
+input::placeholder {
+  font-weight: 400;
+  color: #BABCC4;
+}
+
+// swiper
+.swiper {
+  width: 100%;
+  height: 100%;
+  overflow: inherit;
+  overflow-x: clip;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+// hide number input arrows
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+// change variable when screen mobile
+@media (max-width: 767px) {
+  :root {
+    --modal-space-x: 32px;
+  }
+
+  .btn-primary:hover {
+    background-color: var(--color-button-primary);
+  }
+
+  .btn-primary:disabled {
+    background-color: var(--color-button-disable) !important;
+  }
+
+  .otp-input__digit {
+    width: 48px;
+    height: 48px;
+  }
+}

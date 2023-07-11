@@ -1,5 +1,5 @@
 {
-  "ignorePatterns": ["postcss.config.cjs", "tailwind.config.cjs"],
+  "ignorePatterns": ["postcss.config.cjs"],
   "settings": {
     "react": {
       "version": "detect"

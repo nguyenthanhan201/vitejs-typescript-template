@@ -84,6 +84,7 @@ Our template is ship with the following rock-solid technical decisions out of th
 | Redux Saga            | Redux side-effect | v1      | Provides Redux side effect manager                              |
 | ESLint                | Code Formater     | v8      | Tool for identifying and reporting on patterns Javascript       |
 | Husky                 | Native Git Hook   | v8      | Improves your commits and more testing                          |
+| Tailwind              | CSS Framework     | v3      | Improves time style components                                  |
 | Date-fns              | Date Library      | v2      | Improves time when work with date                               |
 | Lodash                | Utils             | v4      | Improves time when work with array, object, string, number, etc |
 

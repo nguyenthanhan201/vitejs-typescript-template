@@ -6,6 +6,9 @@ const DefaultLayout = () => {
   return (
     <div>
       <h1>Default Layout 2</h1>
+      <h1 className='ml-4 flex h-24 border-2 border-gray-300 p-3 text-gray-700 shadow-md'>
+        Default Layout
+      </h1>
       <h3>todos</h3>
       <ul>
         {todos.todos.map((todo: any) => (

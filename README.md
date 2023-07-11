@@ -27,9 +27,10 @@ v16.15.0
   ```sh
   $ npm install -g degit # install degit if you don't have it
   $ degit nguyenthanhan201/vitejs-typescript-template <project-name>
+  $ degit nguyenthanhan201/vitejs-typescript-template#<branch-name>   # branch
   ```
 
-  [Check out the full documentation!](#documents)
+  [Document of Degit](https://github.com/Rich-Harris/degit)
 
 - Rules commit message
 

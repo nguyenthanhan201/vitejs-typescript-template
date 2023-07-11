@@ -67,12 +67,30 @@ v16.15.0
 - 🛠 A simple workflow for building, releasing, and distributing your app using [fastlane](https://fastlane.tools).
 - 🔥 [axios](https://github.com/axios/axios) for fetching data, to help you build efficient and performant apps.
 <!-- - 🧵 [CodePush](https://github.com/microsoft/react-native-code-push) to deploy mobile app updates directly to their users’ devices. -->
-- 🎯 Localization with [i18n-js](https://github.com/fnando/i18n). |
+- 🎯 Localization with [i18n-js](https://github.com/fnando/i18n).
+
+## Dependencies
+
+Our template is ship with the following rock-solid technical decisions out of the box:
+
+| Library               | Category          | Version | Description                                                     |
+| --------------------- | ----------------- | ------- | --------------------------------------------------------------- |
+| React                 | UI Framework      | v18     | The most popular UI framework in the world                      |
+| React Router Dom      | Navigation        | v6      | Expose config variables to your javascript code                 |
+| i18n-js               | Translation       | v4      | Provide the i18n translations on the JavaScript                 |
+| Axios                 | Network Services  | v1      | Provides promise based HTTP client                              |
+| Redux / Redux-toolkit | State Management  | v8      | Provides state container for JavaScript apps                    |
+| Redux Saga            | Redux side-effect | v1      | Provides Redux side effect manager                              |
+| ESLint                | Code Formater     | v8      | Tool for identifying and reporting on patterns Javascript       |
+| Husky                 | Native Git Hook   | v8      | Improves your commits and more testing                          |
+| Date-fns              | Date Library      | v2      | Improves time when work with date                               |
+| Lodash                | Utils             | v4      | Improves time when work with array, object, string, number, etc |
 
 ## Documents
 
 - [Networking](docs/networking.md)
 - [Config husky + commintLint](https://viblo.asia/p/nang-cao-chat-luong-code-va-hieu-qua-lam-viec-nhom-voi-husky-lint-staged-commitlint-4dbZNnMnZYM)
+- [Degit](https://github.com/Rich-Harris/degit)
 
 ## Table of scripts
 

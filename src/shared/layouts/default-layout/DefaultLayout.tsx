@@ -5,7 +5,7 @@ const DefaultLayout = () => {
 
   return (
     <div>
-      <h1>Default Layout</h1>
+      <h1>Default Layout 2</h1>
       <h3>todos</h3>
       <ul>
         {todos.todos.map((todo: any) => (

@@ -1,6 +1,6 @@
 # vitejs-typescript-template
 
-## Todos
+## 📝 Todos
 
 - [Jenkins và Github Action](https://www.youtube.com/watch?v=Gpl_usE_BWM&t=309s)
 - [add more scripts]()
@@ -61,16 +61,20 @@ v16.15.0
 <!-- - 💅 Integrate in-app debug menu that help you to get the information of device, environment, bundleId, version,... and also allow you to change environment directly in your app. -->
 - ⚙️ Support for multiple environment builds, including Production, Staging, and Development.
 - 🦊 Husky for Git Hooks, to automate your git hooks and enforce code standards.
-<!-- - 💡 State management with [Redux Toolkit](https://redux-toolkit.js.org) along with [Redux Saga](https://redux-saga.js.org). -->
+- 💡 State management with [Zustand](null)
 - 🚫 Lint-staged to ensure that your code is always up to standards.
-- ☂️ Pre-installed [React Router Dom](https://reactnavigation.org) to provide a comprehensive navigation solution for your app.
-<!-- - 💫 [@react-native-async-storage/async-storage](https://github.com/react-native-async-storage/async-storage) as a storage solution to save sensitive data. -->
+  <!-- - ☂️ Pre-installed [React Router Dom](https://reactnavigation.org) to provide a comprehensive navigation solution for your app. -->
+  <!-- - 💫 [@react-native-async-storage/async-storage](https://github.com/react-native-async-storage/async-storage) as a storage solution to save sensitive data. -->
 - 🛠 A simple workflow for building, releasing, and distributing your app using [fastlane](https://fastlane.tools).
 - 🔥 [axios](https://github.com/axios/axios) for fetching data, to help you build efficient and performant apps.
 <!-- - 🧵 [CodePush](https://github.com/microsoft/react-native-code-push) to deploy mobile app updates directly to their users’ devices. -->
 - 🎯 Localization with [i18n-js](https://github.com/fnando/i18n).
+- 📝 [ESLint](https://eslint.org) to maintain a consistent code style.
+<!-- commitLint -->
+- ✅ Commitlint to lint your commit messages.
+- 🚀 Auto deploy to [Vercel](https://www.vercel.com) when push to `main` branch.
 
-## Dependencies
+## 📦️ Dependencies
 
 Our template is ship with the following rock-solid technical decisions out of the box:
 
@@ -90,9 +94,10 @@ Our template is ship with the following rock-solid technical decisions out of th
 
 ## Documents
 
-- [Networking](docs/networking.md)
 - [Config husky + commintLint](https://viblo.asia/p/nang-cao-chat-luong-code-va-hieu-qua-lam-viec-nhom-voi-husky-lint-staged-commitlint-4dbZNnMnZYM)
 - [Degit](https://github.com/Rich-Harris/degit)
+- [Jenkins vs Github Action](https://www.youtube.com/watch?v=Gpl_usE_BWM&t=696s)
+- [Networking](docs/networking.md)
 
 ## Table of scripts
 

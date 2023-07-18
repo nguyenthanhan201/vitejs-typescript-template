@@ -1,6 +1,7 @@
 export { default as useCookie } from "./useCookie";
 export { default as useCopy } from "./useCopy";
 export { default as useCounter } from "./useCounter";
+export { default as useQuery } from "./useCrudQuery";
 export { default as useDebounce } from "./useDebounce";
 export { default as useDevice } from "./useDevice";
 export { default as useFilterOptions } from "./useFilterOptions";
@@ -15,7 +16,6 @@ export { default as useOnClickOutside } from "./useOnClickOutside";
 export { default as useOnScreen } from "./useOnScreen";
 export { default as usePagination } from "./usePagination";
 export { default as usePrevious } from "./usePrevious";
-export { default as useQuery } from "./useQuery";
 export { default as useScreen } from "./useScreen";
 export { default as useScript } from "./useScript";
 export { default as useScrollBlock } from "./useScrollBlock";

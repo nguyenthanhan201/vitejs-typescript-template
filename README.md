@@ -11,14 +11,9 @@
 
 ## Requirements
 
-NodeJS (version 16 or later) and NPM is required.
-To make sure you have them available on your machine, try running the following command
-
-```sh
-$ npm -v && node -v
-8.5.5
-v16.15.0
-```
+- [Node.js](https://nodejs.org/en/) >= v16.18.0
+- [Yarn](https://yarnpkg.com/en/) >= 1.22.19
+- [Npm](https://www.npmjs.com/) >= 8.19.2
 
 ## Quick Start
 

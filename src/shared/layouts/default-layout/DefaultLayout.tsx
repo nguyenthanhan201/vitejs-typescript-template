@@ -2,7 +2,6 @@ import { Outlet, useLoaderData } from "react-router-dom";
 
 const DefaultLayout = () => {
   const todos: any = useLoaderData();
-
   return (
     <div>
       <h1>Default Layout 2</h1>

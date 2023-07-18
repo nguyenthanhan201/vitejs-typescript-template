@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-function useQuery(queryFn: () => Promise<any>) {
+function useCrudQuery(queryFn: Promise<any>) {
   const [data, setData] = useState(null);
   const [isLoading, setLoading] = useState(false);
   const [error, setError] = useState(null);
@@ -10,7 +10,7 @@ function useQuery(queryFn: () => Promise<any>) {
       setLoading(true);
 
       try {
-        const result = await queryFn();
+        const result = await queryFn;
         setData(result);
       } catch (err: any) {
         setError(err);
@@ -20,9 +20,9 @@ function useQuery(queryFn: () => Promise<any>) {
     };
 
     fetchData();
-  }, [queryFn]);
+  }, []);
 
   return { data, isLoading, error };
 }
 
-export default useQuery;
+export default useCrudQuery;

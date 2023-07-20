@@ -1,7 +1,14 @@
+import { usePagination } from "@/shared/hooks";
 import { Outlet, useLoaderData } from "react-router-dom";
 
 const DefaultLayout = () => {
   const todos: any = useLoaderData();
+  const pagination = usePagination({
+    data: todos.todos,
+    boundaries: 3,
+  });
+  console.log(pagination.range);
+
   return (
     <div>
       <h1>Default Layout 2</h1>
@@ -9,6 +16,21 @@ const DefaultLayout = () => {
         Default Layout
       </h1>
       <h3>todos</h3>
+      <div className='flex'>
+        {pagination.range.map((item: any, index: number) => {
+          if (item === "dots") return <span key={index}>...</span>;
+          return (
+            <button
+              key={index}
+              onClick={() => {
+                pagination.setPage(item);
+              }}
+            >
+              {item}
+            </button>
+          );
+        })}
+      </div>
       <ul>
         {todos.todos.map((todo: any) => (
           <li key={todo.id}>{todo.title}</li>

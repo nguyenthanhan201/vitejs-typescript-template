@@ -10,7 +10,6 @@ export { default as useIntersectionObserver } from "./useIntersectionObserver";
 export { default as useInterval } from "./useInterval";
 export { default as useLoading } from "./useLoading";
 export { default as useLocalStorage } from "./useLocalStorage";
-export { default as MemoCompare } from "./useMemoCompare";
 export { default as useNetWork } from "./useNetwork";
 export { default as useOnClickOutside } from "./useOnClickOutside";
 export { default as useOnScreen } from "./useOnScreen";
